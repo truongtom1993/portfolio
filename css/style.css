@@ -2391,6 +2391,11 @@ body.resume-opened .deebo_fn__cv .cv__bg2 {
 /*------------------------------------------------------------------*/
 /*	14) Responsive
 /*------------------------------------------------------------------*/
+@media (min-width: 1041px) {
+	.deebo_fn__cv .cv__header .avatar {
+		margin-top: 100px !important;
+	}
+}
 @media (max-width: 1040px) {
 	.deebo_fn_switcher_wrap {
 		right: 30px;
