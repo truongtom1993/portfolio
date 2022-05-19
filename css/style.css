@@ -252,7 +252,7 @@ body.resume-opened .deebo_fn__cv .cv__bg2 {
 	-ms-flex-direction: column;
 	-o-flex-direction: column;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: flex-start;
 	padding: 40px 10%;
 	border-radius: 10px;
 	overflow-y: scroll;
@@ -2391,11 +2391,7 @@ body.resume-opened .deebo_fn__cv .cv__bg2 {
 /*------------------------------------------------------------------*/
 /*	14) Responsive
 /*------------------------------------------------------------------*/
-@media (min-width: 1041px) {
-	.deebo_fn__cv .cv__header .avatar {
-		margin-top: 100px !important;
-	}
-}
+
 @media (max-width: 1040px) {
 	.deebo_fn_switcher_wrap {
 		right: 30px;
