@@ -45,8 +45,8 @@ body {
 }
 [class^='deebo_fn_'] {
 	width: 100%;
-	float: left;
-	clear: both;
+	/* float: left; */
+	/* clear: both; */
 }
 .deebo_fn_wrapper,
 .deebo_fn_wrapper * {

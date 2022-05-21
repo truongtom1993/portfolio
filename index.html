@@ -39,78 +39,7 @@
 
 	<div class="deebo_fn_main">
 
-		<!-- Light/Dark Switcher -->
-		<!-- <div class="deebo_fn_switcher_wrap">
-			<label>
-				<span class="light">Light</span>
-				<span class="checkbox_wrap">
-					<input type="checkbox" id="skin_switcher">
-					<span class="slider round"></span>
-				</span>
-				<span class="dark">Dark</span>
-			</label>
-		</div> -->
-		<!-- /Light/Dark Switcher -->
 
-		<!-- Overlay -->
-		<div class="right_bar_overlay"></div>
-		<!--/ Overlay -->
-
-		<!-- MODALBOX -->
-		<div class="deebo_fn_modalbox">
-			<a class="extra_closer" href="#"></a>
-			<div class="box_inner">
-				<a class="closer" href="#"><span></span></a>
-				<div class="modal_content">
-
-					<div class="modal_in">
-						<!-- Content comes from JS -->
-					</div>
-
-					<div class="fn__nav" data-from="" data-index="">
-						<a href="#" class="prev">
-							<span class="text">Prev</span>
-							<span class="arrow_wrapper"><span class="arrow"></span></span>
-						</a>
-						<a href="#" class="next">
-							<span class="text">Next</span>
-							<span class="arrow_wrapper"><span class="arrow"></span></span>
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- /MODALBOX -->
-
-		<!-- Overlay -->
-		<div class="right_bar_overlay"></div>
-		<!--/ Overlay -->
-
-		<!-- MODALBOX -->
-		<div class="deebo_fn_modalbox">
-			<a class="extra_closer" href="#"></a>
-			<div class="box_inner">
-				<a class="closer" href="#"><span></span></a>
-				<div class="modal_content">
-
-					<div class="modal_in">
-						<!-- Content comes from JS -->
-					</div>
-
-					<div class="fn__nav" data-from="" data-index="">
-						<a href="#" class="prev">
-							<span class="text">Prev</span>
-							<span class="arrow_wrapper"><span class="arrow"></span></span>
-						</a>
-						<a href="#" class="next">
-							<span class="text">Next</span>
-							<span class="arrow_wrapper"><span class="arrow"></span></span>
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- /MODALBOX -->
 
 		<!-- Modal CV Card -->
 		<div class="deebo_fn_cv">
@@ -268,7 +197,7 @@
 								<li>
 									<div class="item">
 										<div class="item_top">
-											<h5>University of Engineering and Technology (UET)</h5>
+											<h5>Vietnam National University - University of Engineering and Technology (VNU - UET)</h5>
 											<span>( 2011 - 2015 )</span>
 										</div>
 										<h3>Computer Science</h3>
@@ -787,7 +716,38 @@
 	<script type="text/javascript" src="js/waypoints.js?ver=4"></script>
 	<!--[if lt IE 10]> <script type="text/javascript" src="js/ie8.js"></script> <![endif]-->
 	<script type="text/javascript" src="js/init.js?ver=4"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mousetrap/1.6.5/mousetrap.min.js"
+		integrity="sha512-+Jg3Ynmj9hse704K48H6rBBI3jdNBjReRGBCxUWFfOz3yVurnJFWtAWssDAsGtzWYw89xFWPxShuj2T6E9EOpg=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<!-- /Scripts -->
+
+	<script>
+		// single keys
+		Mousetrap.bind('4', function () { console.log('4'); });
+		Mousetrap.bind("?", function () { console.log('show shortcuts!'); });
+		Mousetrap.bind('esc', function () { console.log('escape'); }, 'keyup');
+
+		// combinations
+		Mousetrap.bind('command+shift+k', function () { console.log('command shift k'); });
+
+		// map multiple combinations to the same callback
+		Mousetrap.bind(['command+k', 'ctrl+k'], function () {
+			console.log('command k or control k');
+
+			// return false to prevent default browser behavior
+			// and stop event from bubbling
+			return false;
+		});
+
+		// gmail style sequences
+		Mousetrap.bind('g i', function () { console.log('go to inbox'); });
+		Mousetrap.bind('* a', function () { console.log('select all'); });
+
+		// konami code!
+		Mousetrap.bind('up up down down left right left right b a enter', function () {
+			console.log('konami code');
+		});
+	</script>
 
 </body>
 
